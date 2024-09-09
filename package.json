@@ -1,0 +1,15 @@
+{
+  "name": "challenge8_summary",
+  "version": "1.0.0",
+  "description": "Frontend mentor card component",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./input/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Haysam Abdulhamid",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
