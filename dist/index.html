@@ -13,10 +13,17 @@
     />
     <link rel="stylesheet" href="output.css" />
 
+    <!-- Importing fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -24,18 +31,57 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
-  <body class="bg-black">
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+  <!-- main wrapper -->
+  <body
+    class="min-h-screen bg-no-repeat flex items-center justify-center font-sans"
+    style="
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-color: hsl(225, 100%, 94%);
+    "
+  >
+    <!-- card component -->
+    <div class="bg-[white] rounded-2xl">
+      <img
+        src="./images/illustration-hero.svg"
+        alt="girl with headphones listening to music"
+        class="rounded-t-2xl"
+      />
+      <div class="px-8 text-center my-10">
+        <h1 class="text-[1.6rem] text-[#1f2f56] font-[900]">Order Summary</h1>
+        <p class="max-w-sm px-4 text-[#7280a7] mt-2 text-[16px]">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="p-6 mx-4 bg-[#f5f7ff] flex gap-4 rounded-xl mt-4">
+          <img src="./images/icon-music.svg" alt="music icon" />
+          <div class="flex flex-col items-start">
+            <p class="font-[700] text-[#1f2f56]">Annual Plan</p>
+            <p class="text-[#7280a7] font-[500] inline-block">$59.99/year</p>
+          </div>
+          <button
+            class="text-[#3829e0] text-sans font-[700] underline ml-auto text-[14px]"
+          >
+            Change
+          </button>
+        </div>
+        <div class="flex flex-col gap-5 mt-6 mx-4">
+          <button
+            class="bg-[#3829e0] text-white py-3 rounded-lg shadow-xl shadow-[#3829e0]/20 font-[700]"
+          >
+            Proceed to Payment
+          </button>
+          <button class="text-[#7280a7] font-[700]">Cancel Order</button>
+        </div>
+      </div>
+    </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
